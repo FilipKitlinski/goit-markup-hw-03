@@ -143,6 +143,7 @@ h3 {
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: left;
+  color: #757575;
 }
 .whatWeDo {
   font-family: var(--roboto-font);
@@ -155,6 +156,9 @@ h3 {
 }
 .bgLoremIpsum {
   background-color: #e5e5e5;
+}
+.bgLoremIpsum > * {
+  display: flex;
 }
 h2 {
   font-family: var(--roboto-font);
@@ -185,4 +189,33 @@ h2 {
 }
 .container {
   max-width: 1200px;
+  justify-content: center;
+}
+.whatWeDoPhotos {
+  display: flex;
+}
+.ourTeamPhotos {
+  display: flex;
+}
+.whatWeDoPhotos * {
+  padding-right: 10px;
+}
+.ourTeamPhotos * {
+  padding-right: 10px;
+}
+/* .portfolioPhotosWithLabels * {
+  display: flex;
+} */
+.navigation * {
+  padding-right: 10px;
+}
+.links * {
+  padding-right: 10px;
+}
+/* nav {
+  justify-content: center;
+} */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
