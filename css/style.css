@@ -1,0 +1,188 @@
+:root {
+  --main-bg-color: #e5e5e5;
+  --header-bg-color: #ffffff;
+  --footer-bg-color: #2f303a;
+  --blue-hover: #2196f3;
+  --roboto-font: Roboto;
+  --raleway-font: Raleway;
+}
+body {
+  font-family: var(--roboto-font);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+header {
+  border-bottom-style: 1px solid #ececec;
+  background-color: var(--header-bg-color);
+  display: flex;
+}
+header * {
+  display: flex;
+}
+main {
+  background-color: var(--main-bg-color);
+}
+footer {
+  background-color: var(--footer-bg-color);
+}
+
+.webStudio {
+  font-family: var(--raleway-font);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.web {
+  color: var(--blue-hover);
+}
+.studio {
+  color: #000000;
+}
+.studio2 {
+  color: #ffffff;
+}
+a {
+  text-decoration: none;
+}
+button {
+  font-family: var(--roboto-font);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+h5 {
+  font-family: var(--roboto-font);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+p {
+  font-family: var(--roboto-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.adressFooter {
+  font-family: var(--roboto-font);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #ffffff;
+}
+.kontaktStopka {
+  color: #ffffff99;
+}
+ul {
+  list-style-type: none;
+}
+.zamowUsluge {
+  background-color: var(--blue-hover);
+  color: white;
+  border-color: var(--blue-hover);
+  height: 50px;
+  width: 200px;
+  left: 700px;
+  top: 430px;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: var(--blue-hover);
+  color: white;
+  border-color: var(--blue-hover);
+}
+.whiteLink {
+  color: #ffffff99;
+}
+.greyLink {
+  color: #757575;
+}
+.blackLink {
+  color: #212121;
+}
+.blueHoverLink:hover {
+  color: var(--blue-hover);
+}
+.blackBackground {
+  background-color: var(--footer-bg-color);
+  color: white;
+  font-family: var(--roboto-font);
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+h3 {
+  font-family: var(--roboto-font);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.loremIpsum {
+  font-family: var(--roboto-font);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.whatWeDo {
+  font-family: var(--roboto-font);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  background-color: #e5e5e5;
+}
+.bgLoremIpsum {
+  background-color: #e5e5e5;
+}
+h2 {
+  font-family: var(--roboto-font);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.workersName {
+  font-family: var(--roboto-font);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.position {
+  font-family: var(--roboto-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.ourTeam {
+  background-color: #f5f4fa;
+}
+.container {
+  max-width: 1200px;
+}
