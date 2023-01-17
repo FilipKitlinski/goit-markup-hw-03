@@ -12,9 +12,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
     <title>WebStudio</title>
   </head>
-  <body class="container">
+  <body>
     <header class="container">
       <nav>
         <a href="./index.html" class="webStudio">
@@ -38,11 +39,11 @@
     </header>
     <main>
       <section class="blackBackground section">
-        <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+        <p class="efective">EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU</p>
 
-        <button class="zamowUsluge">Zamów usługe</button>
+        <button class="orderService">Zamów usługe</button>
       </section>
-      <section class="bgLoremIpsum section">
+      <section class="whatWeDo section bgLoremIpsum">
         <ul>
           <li>
             <h3>LOREM IPSUM</h3>
@@ -73,9 +74,7 @@
             </p>
           </li>
         </ul>
-      </section>
 
-      <section class="whatWeDo section">
         <h2>Czym się zajmujemy?</h2>
         <ul class="whatWeDoPhotos">
           <li>
@@ -132,19 +131,23 @@
       </section>
     </main>
   </body>
-  <footer class="container section">
-    <a class="webStudio"><span class="web">Web</span><span class="studio2">Studio</span></a>
-    <address style="font-style: normal">
-      <ul>
-        <li class="adressFooter">m. Warszawa, Aleje Jerozolimskie 21</li>
+  <footer>
+    <div class="container">
+      <a class="webStudio"><span class="web">Web</span><span class="studio2">Studio</span></a>
+      <address style="font-style: normal">
+        <ul>
+          <li class="adressFooter">m. Warszawa, Aleje Jerozolimskie 21</li>
 
-        <li>
-          <a class="whiteLink blueHoverLink" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li>
-          <a class="whiteLink blueHoverLink" href="tel:+48111111111">+48 111 111 111</a>
-        </li>
-      </ul>
-    </address>
+          <li>
+            <a class="whiteLink blueHoverLink" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="whiteLink blueHoverLink" href="tel:+48111111111">+48 111 111 111</a>
+          </li>
+        </ul>
+      </address>
+    </div>
   </footer>
 </html>
