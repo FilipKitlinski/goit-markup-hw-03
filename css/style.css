@@ -203,8 +203,19 @@ h2 {
 .ourTeamPhotos * {
   padding-right: 10px;
 }
-/* .portfolioPhotosWithLabels * {
+
+.portfolioPhotosWithLabels {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+  list-style: none;
+  flex-shrink: 1/3;
+  justify-content: center;
+}
+
+/* .item {
+  flex-basis: calc((100% - 10px) / 3);
 } */
 .navigation * {
   padding-right: 10px;
@@ -219,3 +230,4 @@ h2 {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
