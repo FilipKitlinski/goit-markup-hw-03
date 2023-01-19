@@ -16,8 +16,8 @@
     <title>WebStudio</title>
   </head>
   <body>
-    <header class="container">
-      <nav>
+    <header>
+      <nav class="header container">
         <a href="./index.html" class="webStudio">
           <span class="web">Web</span><span class="studio">Studio</span>
         </a>
@@ -27,15 +27,18 @@
           <li><a class="blackLink blueHoverLink" href="./portfolio.html">Portfolio</a></li>
           <li><a class="blackLink blueHoverLink" href="">Kontakt</a></li>
         </ul>
+
+        <ul class="links">
+          <li>
+            <a class="greyLink blueHoverLink" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="greyLink blueHoverLink" href="tel:+48111111111">+48 111 111 111</a>
+          </li>
+        </ul>
       </nav>
-      <ul class="links">
-        <li>
-          <a class="greyLink blueHoverLink" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li>
-          <a class="greyLink blueHoverLink" href="tel:+48111111111">+48 111 111 111</a>
-        </li>
-      </ul>
     </header>
     <main>
       <section class="blackBackground section">
@@ -45,28 +48,28 @@
       </section>
       <section class="whatWeDo section bgLoremIpsum">
         <ul>
-          <li>
+          <li class="liLoremIpsum">
             <h3>LOREM IPSUM</h3>
             <p class="loremIpsum">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="liLoremIpsum">
             <h3>LOREM IPSUM</h3>
             <p class="loremIpsum">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="liLoremIpsum">
             <h3>LOREM IPSUM</h3>
             <p class="loremIpsum">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="liLoremIpsum">
             <h3>LOREM IPSUM</h3>
             <p class="loremIpsum">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
@@ -107,22 +110,22 @@
       <section class="ourTeam section">
         <h2>Nasz zespół</h2>
         <ul class="ourTeamPhotos">
-          <li>
+          <li class="team">
             <img src="images/worker-1.jpg" alt="worker1" width="270" height="260" />
             <h3 class="workersName">John Doe</h3>
             <p class="position">Product Designer</p>
           </li>
-          <li>
+          <li class="team">
             <img src="images/worker-2.jpg" alt="worker2" width="270" height="260" />
             <h3 class="workersName">John Doe</h3>
             <p class="position">Frontend Developer</p>
           </li>
-          <li>
+          <li class="team">
             <img src="images/worker-3.jpg" alt="worker3" width="270" height="260" />
             <h3 class="workersName">John Doe</h3>
             <p class="position">Marketing</p>
           </li>
-          <li>
+          <li class="team">
             <img src="images/worker-4.jpg" alt="worker4" width="270" height="260" />
             <h3 class="workersName">John Doe</h3>
             <p class="position">UI Designer</p>
@@ -132,9 +135,9 @@
     </main>
   </body>
   <footer>
-    <div class="container">
+    <div class="container footer">
       <a class="webStudio"><span class="web">Web</span><span class="studio2">Studio</span></a>
-      <address style="font-style: normal">
+      <address class="adress">
         <ul>
           <li class="adressFooter">m. Warszawa, Aleje Jerozolimskie 21</li>
 
