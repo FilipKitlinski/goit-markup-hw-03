@@ -14,11 +14,12 @@ body {
 }
 
 .header {
-  border-bottom-style: 1px solid #ececec;
+  border-bottom-style: solid;
   background-color: var(--header-bg-color);
   display: flex;
   border-bottom: 1px solid #ececec;
   font-weight: 500;
+  justify-content: center;
 }
 .header * {
   display: flex;
@@ -36,8 +37,8 @@ footer {
   font-weight: 700;
   line-height: 31px;
   letter-spacing: 0.03em;
-  text-align: left;
-  margin-right: 5%;
+
+  margin-right: 5px;
 }
 .web {
   color: var(--blue-hover);
@@ -61,10 +62,7 @@ a {
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 22px;
-  padding-right: 22px;
+  padding: 6px 22px;
   margin-inline: 8px;
 }
 h4 {
@@ -73,7 +71,6 @@ h4 {
   font-weight: 700;
   line-height: 36px;
   letter-spacing: 0.06em;
-  text-align: left;
 }
 p {
   font-family: var(--roboto-font);
@@ -81,7 +78,6 @@ p {
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.03em;
-  text-align: left;
 }
 .adressFooter {
   font-family: var(--roboto-font);
@@ -89,7 +85,7 @@ p {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.03em;
-  text-align: left;
+
   color: #ffffff;
 }
 .kontaktStopka {
@@ -102,10 +98,8 @@ ul {
   background-color: var(--blue-hover);
   color: white;
   border-color: var(--blue-hover);
-
   font-family: Roboto;
   font-size: 16px;
-
   line-height: 30px;
   letter-spacing: 0.06em;
   text-align: center;
@@ -117,6 +111,7 @@ ul {
   cursor: pointer;
   border: none;
   font-weight: 700;
+  margin: 0 auto;
 }
 
 button:hover {
@@ -152,7 +147,6 @@ h3 {
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 0.03em;
-  text-align: left;
 }
 .loremIpsum {
   font-family: var(--roboto-font);
@@ -160,12 +154,13 @@ h3 {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.03em;
-  text-align: left;
+
   color: #757575;
   max-width: 270px;
 }
 .liLoremIpsum {
   margin: 0 10px;
+  text-align: left;
 }
 .whatWeDo {
   font-family: var(--roboto-font);
@@ -207,14 +202,15 @@ h2 {
 .ourTeam {
   background-color: #f5f4fa;
 }
-.container {
-  max-width: 1200px;
 
+.container {
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
   justify-content: center;
+  max-width: 1200px;
 }
-.container * {
-  align-items: center;
-}
+
 .whatWeDoPhotos {
   display: flex;
 }
@@ -238,14 +234,14 @@ h2 {
   justify-content: center;
 }
 
-.navigation * {
+.navigation *:not(:last-child) {
   padding-right: 10px;
 }
 .links *:not(:last-child) {
   padding-right: 10px;
 }
 .links {
-  margin-left: 10%;
+  margin-left: 100px;
 }
 /* nav {
   justify-content: center;
@@ -255,11 +251,9 @@ h2 {
 }
 .efective {
   font-family: Roboto;
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 60px;
-  letter-spacing: 0.06em;
+
   text-align: center;
+  line-height: 90px;
 }
 .buttons {
   display: flex;
@@ -288,9 +282,9 @@ h2 {
   justify-content: center;
 }
 .footer {
-  padding-left: 10%;
+  padding-left: 215px;
 }
 .adress {
   font-style: normal;
-  margin-left: -3%;
+  margin-left: -39px;
 }
