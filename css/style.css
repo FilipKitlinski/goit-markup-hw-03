@@ -203,12 +203,15 @@ h2 {
   background-color: #f5f4fa;
 }
 
-.container {
+/* .container {
   display: flex;
   flex-direction: column;
-  /* position: relative; */
   justify-content: center;
   max-width: 1200px;
+} */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .whatWeDoPhotos {
