@@ -280,7 +280,8 @@ h2 {
 .efective {
   font-family: Roboto;
   text-align: center;
-  line-height: 90px;
+  line-height: 60px;
+  font-size: 44px;
 }
 /* .blackBackgroundSection {
   margin-top: -153px;
