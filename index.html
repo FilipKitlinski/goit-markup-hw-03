@@ -18,8 +18,8 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <nav class="header">
+      <div class="container header">
+        <nav>
           <a href="./index.html" class="webStudio">
             <span class="web">Web</span><span class="studio">Studio</span>
           </a>
@@ -27,31 +27,30 @@
           <ul class="navigation">
             <li><a class="blackLink blueHoverLink" href="">Agencja</a></li>
             <li><a class="blackLink blueHoverLink" href="./portfolio.html">Portfolio</a></li>
-            <li><a class="blackLink blueHoverLink" href="">Kontakt</a></li>
-          </ul>
-
-          <ul class="links">
-            <li>
-              <a class="greyLink blueHoverLink" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="greyLink blueHoverLink" href="tel:+48111111111">+48 111 111 111</a>
-            </li>
+            <li><a class="blackLink blueHoverLink navigation-last" href="">Kontakt</a></li>
           </ul>
         </nav>
+        <ul class="links">
+          <li>
+            <a class="greyLink blueHoverLink" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="greyLink blueHoverLink" href="tel:+48111111111">+48 111 111 111</a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
-      <section>
-        <div class="blackBackground section container">
+      <section class="section blackBackgroundSection blackBackground">
+        <div class="blackBackground container">
           <h1 class="efective">EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU</h1>
           <button class="orderService">Zamów usługe</button>
         </div>
       </section>
-      <section>
-        <div class="whatWeDo section bgLoremIpsum container">
+      <section class="section">
+        <div class="whatWeDo bgLoremIpsum container">
           <ul>
             <li class="liLoremIpsum">
               <h3>LOREM IPSUM</h3>
@@ -82,7 +81,10 @@
               </p>
             </li>
           </ul>
-
+        </div>
+      </section>
+      <section class="section whatWeDoSection">
+        <div class="container">
           <h2>Czym się zajmujemy?</h2>
           <ul class="whatWeDoPhotos">
             <li>
@@ -112,8 +114,9 @@
           </ul>
         </div>
       </section>
-      <section>
-        <div class="ourTeam section container">
+
+      <section class="section ourTeam">
+        <div class="container">
           <h2>Nasz zespół</h2>
           <ul class="ourTeamPhotos">
             <li class="team">
@@ -142,23 +145,27 @@
     </main>
 
     <footer>
-      <div class="container footer">
-        <a class="webStudio"><span class="web">Web</span><span class="studio2">Studio</span></a>
-        <address class="adress">
-          <ul>
-            <li class="adressFooter">m. Warszawa, Aleje Jerozolimskie 21</li>
+      <section class="section">
+        <div class="container footer">
+          <a class="webStudioFooter"
+            ><span class="web">Web</span><span class="studio2">Studio</span></a
+          >
+          <address class="adress">
+            <ul>
+              <li class="adressFooter">m. Warszawa, Aleje Jerozolimskie 21</li>
 
-            <li>
-              <a class="whiteLink blueHoverLink" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="whiteLink blueHoverLink" href="tel:+48111111111">+48 111 111 111</a>
-            </li>
-          </ul>
-        </address>
-      </div>
+              <li>
+                <a class="whiteLink blueHoverLink" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="whiteLink blueHoverLink" href="tel:+48111111111">+48 111 111 111</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </section>
     </footer>
   </body>
 </html>

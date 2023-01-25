@@ -27,7 +27,7 @@
           <ul class="navigation">
             <li><a class="blackLink blueHoverLink" href="">Agencja</a></li>
             <li><a class="blackLink blueHoverLink" href="./portfolio.html">Portfolio</a></li>
-            <li><a class="blackLink blueHoverLink" href="">Kontakt</a></li>
+            <li><a class="blackLink blueHoverLink navigation-last" href="">Kontakt</a></li>
           </ul>
 
           <ul class="links">
@@ -44,18 +44,18 @@
       </div>
     </header>
     <main>
-      <section>
-        <div class="bookmarks container section">
-          <nav class="buttons">
-            <button class="bookmarksButtons">Wszystkie</button>
-            <button class="bookmarksButtons">Strony</button>
-            <button class="bookmarksButtons">Aplikacje</button>
-            <button class="bookmarksButtons">Dizajn</button>
-            <button class="bookmarksButtons">Marketing</button>
-          </nav>
+      <section class="section">
+        <div class="bookmarks container">
+          <ul class="buttons">
+            <li><button class="bookmarksButtons">Wszystkie</button></li>
+            <li><button class="bookmarksButtons">Strony</button></li>
+            <li><button class="bookmarksButtons">Aplikacje</button></li>
+            <li><button class="bookmarksButtons">Dizajn</button></li>
+            <li><button class="bookmarksButtons">Marketing</button></li>
+          </ul>
         </div>
       </section>
-      <section>
+      <section class="section">
         <div class="photosWithLabels container">
           <ul class="portfolioPhotosWithLabels">
             <li class="item">
@@ -119,23 +119,27 @@
     </main>
 
     <footer>
-      <div class="container footer">
-        <a class="webStudio"><span class="web">Web</span><span class="studio2">Studio</span></a>
-        <address class="adress">
-          <ul>
-            <li class="adressFooter">m. Warszawa, Aleje Jerozolimskie 21</li>
+      <section class="section">
+        <div class="container footer">
+          <a class="webStudioFooter"
+            ><span class="web">Web</span><span class="studio2">Studio</span></a
+          >
+          <address class="adress">
+            <ul>
+              <li class="adressFooter">m. Warszawa, Aleje Jerozolimskie 21</li>
 
-            <li>
-              <a class="whiteLink blueHoverLink" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="whiteLink blueHoverLink" href="tel:+48111111111">+48 111 111 111</a>
-            </li>
-          </ul>
-        </address>
-      </div>
+              <li>
+                <a class="whiteLink blueHoverLink" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="whiteLink blueHoverLink" href="tel:+48111111111">+48 111 111 111</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </section>
     </footer>
   </body>
 </html>
