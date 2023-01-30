@@ -15,6 +15,13 @@ ul {
 a {
   text-decoration: none;
 }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section {
+  padding: 94px 0;
+}
 body {
   font-family: var(--roboto-font);
   font-size: 14px;
@@ -25,28 +32,8 @@ body {
 header {
   border-bottom: 1px solid #ececec;
 }
-main {
-  background-color: var(--main-bg-color);
-}
 footer {
   background-color: var(--footer-bg-color);
-}
-h4 {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 36px;
-  letter-spacing: 0.06em;
-}
-p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.03em;
-}
-button:hover {
-  background-color: var(--blue-hover);
-  color: white;
-  border-color: var(--blue-hover);
 }
 h2 {
   font-size: 36px;
@@ -61,24 +48,32 @@ h3 {
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 0.03em;
-  text-align: center;
   padding-bottom: 10px;
 }
-/* index */
+h4 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+}
 .header {
+  display: flex;
+  justify-content: space-between;
   background-color: var(--header-bg-color);
-  display: flex;
   font-weight: 500;
-  /* justify-content: center; */
-  max-height: 80px;
-  text-align: center;
+  padding: 24px 0;
 }
-.header * {
+.header__nav,
+.header__menu,
+.header__contact {
   display: flex;
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+  align-items: center;
 }
 .header__logo {
   font-family: var(--raleway-font);
@@ -86,80 +81,58 @@ h3 {
   font-weight: 700;
   line-height: 31px;
   letter-spacing: 0.03em;
-  padding: 24px 93px 25px 0px;
-}
-
-.header__logo--1stPart {
   color: var(--blue-hover);
 }
-.header__logo--2ndPart {
-  color: #000000;
+.header__logo--accent {
+  color: #000;
 }
-.header__navigation *:not(:last-child) {
-  padding: 32px 23px;
+.header__menu {
+  margin-left: 93px;
+  column-gap: 46px;
 }
-.header__navigation--subpage {
+.header__menu-link {
   color: #212121;
 }
-.blueHover:hover {
-  color: var(--blue-hover);
-}
-.header__navigation--lastSubage {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 23px;
-}
 .header__contact {
-  padding-left: 30%;
-  white-space: nowrap;
+  column-gap: 50px;
 }
-.header__contact--links {
+.header__contact-link {
   color: #757575;
-  padding: 32px 25px 32px 25px;
 }
-.section {
-  padding: 94px 0;
+.header__menu-link:hover,
+.header__contact-link:hover {
+  color: var(--blue-hover);
 }
 .slogan {
   background-color: var(--footer-bg-color);
   color: white;
+  letter-spacing: 0.06em;
+  text-align: center;
+  padding: 200px 0;
+}
+.slogan__text {
   font-size: 44px;
   font-weight: 900;
   line-height: 60px;
-  letter-spacing: 0.06em;
-  text-align: center;
-  padding-top: 170px;
-  padding-bottom: 200px;
-}
-.slogan__text {
-  font-family: Roboto;
-  text-align: center;
-  line-height: 60px;
-  font-size: 44px;
+  margin-bottom: 30px;
 }
 .slogan__button {
   background-color: var(--blue-hover);
-  color: white;
   border-color: var(--blue-hover);
-  font-family: Roboto;
+  color: white;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
   border-radius: 4px;
   cursor: pointer;
   border: none;
-  padding: 10px 42px 10px 42px;
+  padding: 10px 42px;
   font-weight: 700;
 }
-.lorem {
-  background-color: white;
-}
-.lorem__div > * {
+.lorem__list {
   display: flex;
-}
-.lorem__table * {
-  margin: 0 10px;
-  text-align: left;
+  justify-content: space-between;
+  column-gap: 30px;
 }
 .lorem__table--text {
   font-size: 14px;
@@ -167,46 +140,32 @@ h3 {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
-  max-width: 270px;
 }
 .what_we_do {
-  margin-top: -94px;
-  background-color: white;
+  padding-top: 0;
 }
-.what_we_do__photos {
+.what_we_do__photos,
+.our_team__photos {
   display: flex;
-  justify-content: center;
-}
-.what_we_do__photos *:not(:last-child) {
-  padding-right: 30px;
+  justify-content: space-between;
+  column-gap: 30px;
 }
 .our_team {
   background-color: #f5f4fa;
 }
-.our_team__photos {
-  display: flex;
-  justify-content: center;
-}
-.our_team__photos *:not(:last-child) {
-  padding-right: 30px;
-}
 .our_team__table {
-  border: 1px solid #eeeeee;
-  margin: 0 10px;
-  background-color: #ffffff;
-  width: 240px;
+  border: 1px solid #eee;
+  background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-right: 30px;
+  text-align: center;
 }
 .our_team__names {
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
   letter-spacing: 0.03em;
-  text-align: center;
-  padding-left: 55px;
   padding-top: 30px;
   padding-bottom: 10px;
 }
@@ -215,48 +174,40 @@ h3 {
   font-weight: 400;
   line-height: 19px;
   letter-spacing: 0.03em;
-  text-align: center;
-  padding-left: 30px;
   padding-bottom: 30px;
   color: #757575;
 }
 .footer {
-  /* padding-left: 13%; */
-  padding-top: 60px;
-
-  padding-bottom: 60px;
+  padding: 60px 0;
 }
 .footer__logo {
+  display: inline-block;
   font-family: var(--raleway-font);
+  color: var(--blue-hover);
   font-size: 26px;
   font-weight: 700;
   line-height: 31px;
   letter-spacing: 0.03em;
-  padding: 24px 93px 11px 0px;
-  /* margin-left: -90px; */
+  margin-bottom: 20px;
 }
-.footer__logo--1stPart {
-  color: var(--blue-hover);
-}
-.footer__logo--2ndPart {
-  color: #ffffff;
+.footer__logo--accent {
+  color: #fff;
 }
 .footer__adress {
   font-style: normal;
-  /* margin-left: -39px; */
-}
-.footer__adress * {
-  padding-top: 9px;
 }
 .footer__adress--adress {
   font-size: 14px;
-  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: #fff;
+  margin-bottom: 9px;
 }
 .footer__adress--contact {
+  display: inline-block;
   color: #ffffff99;
+  line-height: 24px;
+  margin-bottom: 9px;
 }
 /* porfolio */
 .bookmarks__buttons {
@@ -288,11 +239,9 @@ h3 {
 }
 .tiles__table {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
-  padding: 0;
-  list-style: none;
-  justify-content: center;
 }
 .tiles__table--frame {
   border: 1px solid #eeeeee;
@@ -305,6 +254,9 @@ h3 {
   color: #757575;
 }
 .footer__adress--contactPortfolio {
-  color: #ffffff99;
   text-decoration-line: underline;
+  display: inline-block;
+  color: #ffffff99;
+  line-height: 24px;
+  margin-bottom: 9px;
 }

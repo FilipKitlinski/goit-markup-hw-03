@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,39 +12,27 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-
     <title>WebStudio</title>
   </head>
   <body>
     <header>
       <div class="container header">
-        <nav>
-          <a href="./index.html" class="header__logo">
-            <span class="header__logo--1stPart">Web</span
-            ><span class="header__logo--2ndPart">Studio</span>
+        <nav class="header__nav">
+          <a href="./index.html" class="header__logo"
+            >Web<span class="header__logo--accent">Studio</span>
           </a>
-          <ul class="header__navigation">
-            <li><a class="header__navigation--subpage blueHover" href="">Agencja</a></li>
-            <li>
-              <a class="header__navigation--subpage blueHover" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li>
-              <a
-                class="header__navigation--subpage blueHover header__navigation--lastSubage"
-                href=""
-                >Kontakt</a
-              >
-            </li>
+          <ul class="header__menu">
+            <li><a class="header__menu-link" href="">Agencja</a></li>
+            <li><a class="header__menu-link" href="./portfolio.html">Portfolio</a></li>
+            <li><a class="header__menu-link" href="">Kontakt</a></li>
           </ul>
         </nav>
         <ul class="header__contact">
           <li>
-            <a class="header__contact--links blueHover" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+            <a class="header__contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
           <li>
-            <a class="header__contact--links blueHover" href="tel:+48111111111">+48 111 111 111</a>
+            <a class="header__contact-link" href="tel:+48111111111">+48 111 111 111</a>
           </li>
         </ul>
       </div>
@@ -57,31 +44,31 @@
           <button class="slogan__button">Zamów usługe</button>
         </div>
       </section>
-      <section class="section lorem">
-        <div class="lorem__div container">
-          <ul>
-            <li class="lorem__table">
+      <section class="section">
+        <div class="container">
+          <ul class="lorem__list">
+            <li>
               <h3>LOREM IPSUM</h3>
               <p class="lorem__table--text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="lorem__table">
+            <li>
               <h3>LOREM IPSUM</h3>
               <p class="lorem__table--text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="lorem__table">
+            <li>
               <h3>LOREM IPSUM</h3>
               <p class="lorem__table--text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="lorem__table">
+            <li>
               <h3>LOREM IPSUM</h3>
               <p class="lorem__table--text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
@@ -152,18 +139,16 @@
     </main>
     <footer>
       <div class="container footer">
-        <a class="footer__logo"
-          ><span class="footer__logo--1stPart">Web</span
-          ><span class="footer__logo--2ndPart">Studio</span></a
-        >
+        <a href="./index.html" class="footer__logo"
+          >Web<span class="footer__logo--accent">Studio</span>
+        </a>
         <address class="footer__adress">
           <ul>
             <li class="footer__adress--adress">m. Warszawa, Aleje Jerozolimskie 21</li>
-
             <li>
-              <a class="footer__adress--contact" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+              <a class="footer__adress--contact" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
             </li>
             <li>
               <a class="footer__adress--contact" href="tel:+48111111111">+48 111 111 111</a>
